@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LastUpdate>20230415T134851</LastUpdate>
+<GeoSite Name="Hainan">
+    <Location Longitude="109.62514" Latitude="18.34" Altitude="44"/>
+</GeoSite>
+<Network>
+    <Multicast Address="224.1.1.10" Port="5000"/>
+    <Code Type="1">
+        <!--Type 1 : JSON-->
+        <!--Type 2 : Struct - Xiguang-->
+    </Code>
+    <Command Port="5001"/>
+    <PDXP Enable="false" Address="192.168.3.10" Port="8001"/>
+</Network>
+<PDU>
+    <IP Address="192.168.1.6" Port="3002"/>
+    <DevicePower Port="5"/>
+</PDU>
+<Sample Cycle="30" Dir="/history"/>
+<WeatherStation Port="/dev/ttyUSB0"/>
+<SQM Address="192.168.1.6"/>
+<CloudCamera>
+    <CloudAge FileName="updateFile_new.txt"/>
+    <Storage Dir="/data" Prefix="WMC"/>
+    <SunElevation Max="-10"/>
+    <Exposure Min="1" Max="10"/>
+    <Camera Saturation="60000" Cooler="-10"/>
+    <FreeDisk Min="100"/>
+</CloudCamera>

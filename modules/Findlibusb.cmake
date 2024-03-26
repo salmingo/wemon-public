@@ -1,0 +1,3 @@
+MESSAGE(STATUS "Searching SDK for USB ...")
+
+FIND_LIBRARY(USB_LIB NAMES usb-1.0)

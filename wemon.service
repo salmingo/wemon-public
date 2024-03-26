@@ -1,0 +1,16 @@
+[Unit]
+Description=environment weather monitor
+
+[Service]
+Type=forking
+PIDFile=/run/wemon.pid
+User=root
+Group=root
+WorkingDirectory=/
+ExecStart=/usr/local/bin/wemon
+Restart=always
+RestartSec=10
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
